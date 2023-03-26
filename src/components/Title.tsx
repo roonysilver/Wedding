@@ -14,6 +14,7 @@ const Section = styled('section', {
 
 const Layout = styled('div', {
   width: '100%',
+  height: '100%',
   color: '#5D4037',
   textAlign: 'center',
   marginTop: '3.5%',

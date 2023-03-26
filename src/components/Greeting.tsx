@@ -13,6 +13,7 @@ const Layout = styled('div', {
 const Title = styled('p', {
   color: '#795548',
   width: '100%',
+  height: '100%',
   fontSize: isPortrait ? '2.5em' : '3.5em',
   margin: 0,
   fontWeight: '500',
@@ -49,9 +50,9 @@ const Greeting = ({ config }: GreetingProps) => {
       <Layout>
         <Title>Buổi lễ kết hôn</Title>
         <SubTitle>
-          Chú rể đẹp trại {config.bride.name}
+          Chú rể {config.bride.name}
           <br />
-          Cô dâu đẹp gái {config.groom.name}
+          Cô dâu {config.groom.name}
           <br />
           <br />
           Hai người có sở thích và giá trị khác nhau

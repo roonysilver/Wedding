@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Wedding/static/css/main.08729157.css",
+    "main.js": "/Wedding/static/js/main.401b96d8.js",
+    "static/js/787.9b74c651.chunk.js": "/Wedding/static/js/787.9b74c651.chunk.js",
+    "static/media/UJI_0199.jpg": "/Wedding/static/media/UJI_0199.12c7b4513678bbdd1d95.jpg",
+    "static/media/UJI_0257.jpg": "/Wedding/static/media/UJI_0257.67694eedf2e65af3b66b.jpg",
+    "static/media/UJI_9906.jpg": "/Wedding/static/media/UJI_9906.52bb89c07918e30d772b.jpg",
+    "static/media/UJI_9649.jpg": "/Wedding/static/media/UJI_9649.d39a18080f5fb5ca3bbd.jpg",
+    "static/media/UJI_7466.jpg": "/Wedding/static/media/UJI_7466.091798388c0a56eb1101.jpg",
+    "static/media/UJI_7004.jpg": "/Wedding/static/media/UJI_7004.0f97d7ab2ffde4d0d42e.jpg",
+    "static/media/UJI_7503.jpg": "/Wedding/static/media/UJI_7503.8070197a80dc6db6eae7.jpg",
+    "static/media/UJI_9640.jpg": "/Wedding/static/media/UJI_9640.9b7a98b7dbb142203352.jpg",
+    "static/media/UJI_0163.jpg": "/Wedding/static/media/UJI_0163.0c81a8ea1fb53502d586.jpg",
+    "static/media/UJI_9830.jpg": "/Wedding/static/media/UJI_9830.2bb99867b5f59db6c213.jpg",
+    "static/media/UJI_9872.jpg": "/Wedding/static/media/UJI_9872.9d012e4d6e4ae9a2cce3.jpg",
+    "static/media/UJI_8730.jpg": "/Wedding/static/media/UJI_8730.d637f34ef2f78cd26f60.jpg",
+    "static/media/UJI_8676.jpg": "/Wedding/static/media/UJI_8676.dfafcea7bd9ca0035d3c.jpg",
+    "static/media/UJI_6835.jpg": "/Wedding/static/media/UJI_6835.74e0e4768dc29da36aad.jpg",
+    "static/media/UJI_7058.jpg": "/Wedding/static/media/UJI_7058.437918eada81e1c7d9f1.jpg",
+    "static/media/UJI_8814.jpg": "/Wedding/static/media/UJI_8814.9f1ed059be9722c94442.jpg",
+    "static/media/UJI_8754.jpg": "/Wedding/static/media/UJI_8754.0cb58757f12bda74e9de.jpg",
+    "static/media/LocationFullHouse.png": "/Wedding/static/media/LocationFullHouse.47ccf1dca96a101cad07.png",
+    "index.html": "/Wedding/index.html",
+    "main.08729157.css.map": "/Wedding/static/css/main.08729157.css.map",
+    "main.401b96d8.js.map": "/Wedding/static/js/main.401b96d8.js.map",
+    "787.9b74c651.chunk.js.map": "/Wedding/static/js/787.9b74c651.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08729157.css",
+    "static/js/main.401b96d8.js"
+  ]
+}

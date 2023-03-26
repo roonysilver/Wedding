@@ -50,9 +50,9 @@ const Greeting = ({ config }: GreetingProps) => {
       <Layout>
         <Title>Buổi lễ kết hôn</Title>
         <SubTitle>
-          Chú rể {config.bride.name}
+          Cô dâu {config.bride.name}
           <br />
-          Cô dâu {config.groom.name}
+          Chú rể {config.groom.name}
           <br />
           <br />
           Hai người có sở thích và giá trị khác nhau

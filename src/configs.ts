@@ -16,6 +16,7 @@ import GalleryPhoto13 from './resources/UJI_7503.jpg';
 import GalleryPhoto14 from './resources/UJI_0199.jpg';
 import GalleryPhoto15 from './resources/UJI_8730.jpg';
 import GalleryPhoto16 from './resources/UJI_9640.jpg';
+import WeddingImage from './resources/wedding.jpg'
 
 
 const Configs: ConfigsType = {
@@ -41,6 +42,7 @@ const Configs: ConfigsType = {
     motherAccountNumber: '***-***-******',
   },
   titleImage: TitleImage,
+  weddingImage: WeddingImage,
   locationMapImage: LocationMapImage,
   galleryImages: [
     GalleryPhoto1,
@@ -71,6 +73,7 @@ export type ConfigsType = {
   groom: Person;
   bride: Person;
   titleImage: string;
+  weddingImage: string;
   locationMapImage: string;
   galleryImages: string[];
 };

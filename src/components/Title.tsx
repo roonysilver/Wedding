@@ -68,14 +68,17 @@ const Title = ({ config }: TitleProps) => {
       <Section>
         <Layout>
           <SubTitleLayout>WEDDING INVITATION</SubTitleLayout>
-          <TitleLayout>
-            {config.groom.name} &amp; {config.bride.name}
+          <TitleLayout style={{ display: 'flex', justifyContent:'center' }}>
+            <div>{config.groom.name}</div>
+            <div style={{ paddingTop: '20px', paddingInline: '10px' }}>&amp;</div>
+            <div style={{ paddingTop: '40px' }}>{config.bride.name}</div>   
           </TitleLayout>
-          <SubTitleLayout>
+          
+          {/* <SubTitleLayout>
             {config.weddingDate}
             <br />
             {config.weddingLocation}
-          </SubTitleLayout>
+          </SubTitleLayout> */}
         </Layout>
         <ImageLayout>
           <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />

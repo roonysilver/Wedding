@@ -2,12 +2,13 @@ import { useRef } from 'react';
 import { styled } from '@stitches/react';
 import useOnScreen from '../hooks/useOnScreen';
 import { ConfigsType } from '../configs';
+import { Col, Image, Row } from 'antd';
 
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Layout = styled('div', {
   width: '100%',
-  padding: isPortrait ? '30% 0% 15% 5%' : '5% 0% 5% 10%',
+  padding: isPortrait ? '30% 5% 15% 5%' : '5% 5% 5% 10%',
 });
 
 const Title = styled('p', {
@@ -40,7 +41,7 @@ const Greeting = ({ config }: GreetingProps) => {
     <section
       ref={ref}
       style={{
-        height: '100vh',
+        height: '55vh',
         background: onScreen ? '#EFEBE9' : '#DADADA',
         overflow: 'hidden',
         position: 'relative',
@@ -49,28 +50,7 @@ const Greeting = ({ config }: GreetingProps) => {
     >
       <Layout>
         <Title>Buổi lễ kết hôn</Title>
-        <SubTitle>
-          Cô dâu {config.bride.name}
-          <br />
-          Chú rể {config.groom.name}
-          <br />
-          <br />
-          Hai người có sở thích và giá trị khác nhau
-          <br />
-          Trở thành một sự tương đồng thông qua tình yêu
-          <br />
-          Cùng đi trên một hành trình gọi là cuộc sống với nhau.
-          <br />
-          <br />
-          với sự khích lệ và chúc phúc nồng nhiệt
-          <br />
-          Hãy thắp sáng tình yêu của một khởi đầu mạnh mẽ.
-          <br />
-          <br />
-          {config.groom.name} con trai của {config.groom.fatherName} · {config.groom.motherName}
-          <br />
-          {config.bride.name} con gái của {config.bride.fatherName} · {config.bride.motherName}
-        </SubTitle>
+       <Image src={config.weddingImage}></Image>
       </Layout>
     </section>
   );

@@ -16,6 +16,22 @@ import GalleryPhoto13 from './resources/UJI_7503.jpg';
 import GalleryPhoto14 from './resources/UJI_0199.jpg';
 import GalleryPhoto15 from './resources/UJI_8730.jpg';
 import GalleryPhoto16 from './resources/UJI_9640.jpg';
+import GalleryPhoto17 from './resources/UJI_6706.jpg';
+import GalleryPhoto18 from './resources/UJI_7503.jpg';
+import GalleryPhoto19 from './resources/UJI_8754.jpg';
+import GalleryPhoto20 from './resources/UJI_8775.jpg';
+import GalleryPhoto21 from './resources/UJI_8831.jpg';
+import GalleryPhoto22 from './resources/UJI_8869.jpg';
+import GalleryPhoto23 from './resources/UJI_9040.jpg';
+import GalleryPhoto24 from './resources/UJI_9607.jpg';
+import GalleryPhoto25 from './resources/UJI_9337.jpg';
+import GalleryPhoto26 from './resources/UJI_9265.jpg';
+import GalleryPhoto27 from './resources/UJI_9154.jpg';
+import GalleryPhoto28 from './resources/UJI_8932.jpg';
+import GalleryPhoto29 from './resources/UJI_8173.jpg';
+import GalleryPhoto30 from './resources/UJI_9498.jpg';
+import GalleryPhoto31 from './resources/UJI_8915.jpg';
+import GalleryPhoto32 from './resources/UJI_9229.jpg';
 import WeddingImage from './resources/wedding.jpg'
 
 
@@ -61,6 +77,22 @@ const Configs: ConfigsType = {
     GalleryPhoto14,
     GalleryPhoto15,
     GalleryPhoto16,
+    GalleryPhoto18,
+    GalleryPhoto19,
+    GalleryPhoto20,
+    GalleryPhoto21,
+    GalleryPhoto22,
+    GalleryPhoto23,
+    GalleryPhoto24,
+    GalleryPhoto25,
+    GalleryPhoto26,
+    GalleryPhoto27,
+    GalleryPhoto28,
+    GalleryPhoto29,
+    GalleryPhoto30,
+    GalleryPhoto17,
+    GalleryPhoto31,
+    GalleryPhoto32
   ],
 };
 

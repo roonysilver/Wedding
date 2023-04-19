@@ -37,7 +37,7 @@ const Gallery = ({ config }: GalleryProps) => {
       style={{
         height: '100vh',
         background: onScreen ? '#212121' : '#EFEBE9',
-        overflow: 'hidden',
+        overflow: 'auto',
         position: 'relative',
         transition: 'background 1s ease-in',
       }}
@@ -45,7 +45,7 @@ const Gallery = ({ config }: GalleryProps) => {
       <Layout>
         <Title>Khoảnh khắc tuyệt vời</Title>
       </Layout>
-      <Row gutter={[16, 16]}>
+      <Row gutter={[16, 16]} style={{ paddingBottom: "40px" }}>
         {config.galleryImages.map((image, index) => (
           <Col key={index} span={isPortrait ? 6 : 3}>
             <Image width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} />

@@ -44,15 +44,17 @@ const Location = ({ config }: LocationProps) => {
       <Layout>
         <Title>Địa chỉ</Title>
         <SubTitle>
-         45 Lê Lợi, Phú Hội, Thành phố Huế, Thừa Thiên Huế
+          45 Lê Lợi, Phú Hội, Thành phố Huế, Thừa Thiên Huế
           <br />
           <br />
           <br />
-          <img
-            style={{ width: isPortrait ? '90%' : '60%' }}
-            src={config.locationMapImage}
-            alt="Wedding Invitation Title Picutre"
-          />
+          <div style={{ paddingLeft: '10px' }}>
+            <img
+              style={{ width: isPortrait ? '90%' : '60%' }}
+              src={config.locationMapImage}
+              alt="Wedding Invitation Title Picutre"
+            />
+          </div>
         </SubTitle>
       </Layout>
     </Section>

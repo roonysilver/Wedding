@@ -37,7 +37,8 @@ const Gallery = ({ config }: GalleryProps) => {
       style={{
         height: '100vh',
         background: onScreen ? '#212121' : '#EFEBE9',
-        overflow: 'auto',
+        overflowY: 'auto',
+        overflowX: 'hidden',
         position: 'relative',
         transition: 'background 1s ease-in',
       }}

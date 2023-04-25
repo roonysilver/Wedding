@@ -1,4 +1,6 @@
 import { styled } from '@stitches/react';
+import { Grid } from 'antd';
+import { Fragment } from 'react';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
 import { ConfigsType } from '../configs';
@@ -6,7 +8,7 @@ import { ConfigsType } from '../configs';
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Section = styled('section', {
-  height: '100%',
+  height: 'auto',
   background: '#DADADA',
   overflow: 'hidden',
   position: 'relative',
@@ -38,9 +40,9 @@ const SubTitleLayout = styled('p', {
 const ImageLayout = styled('div', {
   width: '100%',
   background: '#DADADA',
-  bottom: '-150px',
+  // bottom: '-150px',
   textAlign: 'center',
-  position: 'absolute',
+  // position: 'absolute',
 });
 
 const Image = styled('img', {
@@ -68,21 +70,21 @@ const Title = ({ config }: TitleProps) => {
       <Section>
         <Layout>
           <SubTitleLayout>WEDDING INVITATION</SubTitleLayout>
-          <TitleLayout style={{ display: 'flex', justifyContent:'center' }}>
+          <TitleLayout style={{ display: 'flex', justifyContent: 'center' }}>
             <div>{config.groom.name}</div>
             <div style={{ paddingTop: '20px', paddingInline: '10px' }}>&amp;</div>
-            <div style={{ paddingTop: '40px' }}>{config.bride.name}</div>   
+            <div style={{ paddingTop: '40px' }}>{config.bride.name}</div>
           </TitleLayout>
-          
+
           {/* <SubTitleLayout>
             {config.weddingDate}
             <br />
             {config.weddingLocation}
           </SubTitleLayout> */}
+          <ImageLayout>
+            <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />
+          </ImageLayout>
         </Layout>
-        <ImageLayout>
-          <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />
-        </ImageLayout>
       </Section>
     </>
   );

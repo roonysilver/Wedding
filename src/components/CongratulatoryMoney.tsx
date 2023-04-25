@@ -11,6 +11,7 @@ const Section = styled('section', {
   background: '#EFEBE9',
   overflow: 'hidden',
   position: 'relative',
+
 });
 
 const Layout = styled('div', {
@@ -36,8 +37,10 @@ const SubTitle = styled('p', {
 });
 
 const GridLayout = styled('div', {
-  display: 'grid',
-  gridTemplateColumns: '50% 50%',
+  // display: 'grid',
+  gridTemplateColumns: '100%',
+  maxWidth: "500px",
+  marginInline: "auto"
 });
 
 const Description = styled('p', {
@@ -53,114 +56,31 @@ type CongratulatoryMoneyProps = {
 
 const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
   const [groomVisible, setGroomVisible] = useState<boolean>(false);
-  const [brideVisible, setBrideVisible] = useState<boolean>(false);
+  // const [brideVisible, setBrideVisible] = useState<boolean>(false);
 
   return (
     <Section>
-      <Layout>
-        {/* <Title>Gởi lời chúc mừng</Title> */}
-        {/* <SubTitle>축하의 마음을 담아 축의금을 전달해 보세요.</SubTitle> */}
-      </Layout>
-      {/* <GridLayout>
-        <HongBao title="신랑측" subTitle="계좌번호 확인" onClick={() => setGroomVisible(true)} />
-        <HongBao title="신부측" subTitle="계좌번호 확인" onClick={() => setBrideVisible(true)} />
-      </GridLayout> */}
+      <GridLayout>
+        <HongBao title="Mở phong bì để mừng cưới nhé" subTitle="" onClick={() => setGroomVisible(true)} />
+      </GridLayout>
       <Modal
-        title={<b>신랑측 계좌번호</b>}
+        title={<b>Mừng cưới nè</b>}
         open={groomVisible}
         onOk={() => setGroomVisible(false)}
         onCancel={() => setGroomVisible(false)}
         cancelButtonProps={{ style: { display: 'none' } }}
         okButtonProps={{ style: { display: 'none' } }}
-        footer={[<Description>계좌번호 클릭시, 붙여넣기 가능한 텍스트로 복사됩니다.</Description>]}
+        footer={[<Description>Vui quá xá là vui !!!</Description>]}
       >
-        <div>
-          <b>부) {config.groom.fatherName}</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={config.groom.fatherAccountNumber || ''}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
-            >
-              {config.groom.fatherAccountNumber || ''}
-            </Button>
-          </CopyToClipboard>
-        </div>
-        <div style={{ marginTop: 24, marginBottom: 24 }}>
-          <b>모) {config.groom.motherName}</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={config.groom.motherAccountNumber || ''}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
-            >
-              {config.groom.motherAccountNumber || ''}
-            </Button>
-          </CopyToClipboard>
-        </div>
-        <div>
-          <b>신랑 {config.groom.name}</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={config.groom.accountNumber}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
-            >
-              {config.groom.accountNumber}
-            </Button>
-          </CopyToClipboard>
-        </div>
-      </Modal>
-      <Modal
-        title={<b>신부측 계좌번호</b>}
-        open={brideVisible}
-        onOk={() => setBrideVisible(false)}
-        onCancel={() => setBrideVisible(false)}
-        cancelButtonProps={{ style: { display: 'none' } }}
-        okButtonProps={{ style: { display: 'none' } }}
-        footer={[<Description>계좌번호 클릭시, 붙여넣기 가능한 텍스트로 복사됩니다.</Description>]}
-      >
-        <div>
-          <b>부) {config.bride.fatherName}</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={config.bride.fatherAccountNumber || ''}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
-            >
-              {config.bride.fatherAccountNumber || ''}
-            </Button>
-          </CopyToClipboard>
-        </div>
-        <div style={{ marginTop: 24, marginBottom: 24 }}>
-          <b>모) {config.bride.motherName}</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={config.bride.motherAccountNumber || ''}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
-            >
-              {config.bride.motherAccountNumber || ''}
-            </Button>
-          </CopyToClipboard>
-        </div>
-        <div>
-          <b>신부 {config.bride.name}</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={config.bride.accountNumber}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
-            >
-              {config.bride.accountNumber}
-            </Button>
-          </CopyToClipboard>
+        <div style={{ display: "grid", justifyItems: "center" }}>
+
+          <b>Quét mã QR Nhớ kém lời chúc nhé!!!</b>
+          
+            <img
+              style={{ width: isPortrait ? '90%' : '60%' }}
+              src={config.qrMoney}
+              alt="Wedding QR money"
+            />
         </div>
       </Modal>
     </Section>

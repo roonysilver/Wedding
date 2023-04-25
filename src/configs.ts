@@ -33,6 +33,7 @@ import GalleryPhoto30 from './resources/UJI_9498.jpg';
 import GalleryPhoto31 from './resources/UJI_8915.jpg';
 import GalleryPhoto32 from './resources/UJI_9229.jpg';
 import WeddingImage from './resources/wedding.jpg'
+import QRMonney from './resources/qr_tien.jpg'
 
 
 const Configs: ConfigsType = {
@@ -60,6 +61,7 @@ const Configs: ConfigsType = {
   titleImage: TitleImage,
   weddingImage: WeddingImage,
   locationMapImage: LocationMapImage,
+  qrMoney: QRMonney,
   galleryImages: [
     GalleryPhoto1,
     GalleryPhoto2,
@@ -102,6 +104,7 @@ export type ConfigsType = {
   kakaoImage: string;
   weddingDate: string;
   weddingLocation: string;
+  qrMoney: string;
   groom: Person;
   bride: Person;
   titleImage: string;

@@ -82,15 +82,15 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
             <div style={{ display: 'block', textAlign: 'center' }}>
               <div>Chú rể nè</div>
               <img
-                style={{ width: isPortrait ? '75%' : '75%', height: 'fit-content' }}
+                style={{ width: isPortrait ? '75%' : '75%' }}
                 src={config.qrMoney}
                 alt="Wedding QR money"
               />
             </div>
-            <div style={{ display: 'block', textAlign: 'center', marginRight: "5%" }}>
+            <div style={{ display: 'block', textAlign: 'center', marginRight: '5%' }}>
               <div>Cô dâu nè</div>
               <img
-                style={{ width: isPortrait ? '100%' : '100%', height: 'fit-content', paddingTop: "2px" }}
+                style={{ width: isPortrait ? '100%' : '100%', height: '100', paddingTop: '2px' }}
                 src={config.qrBrigde}
                 alt="Wedding QR money"
               />

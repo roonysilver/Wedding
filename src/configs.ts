@@ -34,7 +34,7 @@ import GalleryPhoto31 from './resources/UJI_8915.jpg';
 import GalleryPhoto32 from './resources/UJI_9229.jpg';
 import WeddingImage from './resources/wedding.jpg'
 import QRMonney from './resources/qr_tien.jpg'
-
+import QRBrigde from './resources/qr_codau.jpg'
 
 const Configs: ConfigsType = {
   url: 'http://localhost:3000',
@@ -62,6 +62,7 @@ const Configs: ConfigsType = {
   weddingImage: WeddingImage,
   locationMapImage: LocationMapImage,
   qrMoney: QRMonney,
+  qrBrigde: QRBrigde,
   galleryImages: [
     GalleryPhoto1,
     GalleryPhoto2,
@@ -105,6 +106,7 @@ export type ConfigsType = {
   weddingDate: string;
   weddingLocation: string;
   qrMoney: string;
+  qrBrigde: string;
   groom: Person;
   bride: Person;
   titleImage: string;

@@ -61,7 +61,11 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
   return (
     <Section>
       <GridLayout>
-        <HongBao title="Mở phong bì để mừng cưới nhé" subTitle="" onClick={() => setGroomVisible(true)} />
+        <HongBao
+          title="Mở phong bì để mừng cưới nhé"
+          subTitle=""
+          onClick={() => setGroomVisible(true)}
+        />
       </GridLayout>
       <Modal
         title={<b>Mừng cưới nè</b>}
@@ -72,15 +76,26 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
         okButtonProps={{ style: { display: 'none' } }}
         footer={[<Description>Vui quá xá là vui !!!</Description>]}
       >
-        <div style={{ display: "grid", justifyItems: "center" }}>
-
+        <div style={{ display: 'grid' }}>
           <b>Quét mã QR Nhớ kém lời chúc nhé!!!</b>
-          
-            <img
-              style={{ width: isPortrait ? '90%' : '60%' }}
-              src={config.qrMoney}
-              alt="Wedding QR money"
-            />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ display: 'block', textAlign: 'center' }}>
+              <div>Chú rể nè</div>
+              <img
+                style={{ width: isPortrait ? '75%' : '75%', height: 'fit-content' }}
+                src={config.qrMoney}
+                alt="Wedding QR money"
+              />
+            </div>
+            <div style={{ display: 'block', textAlign: 'center', marginRight: "5%" }}>
+              <div>Cô dâu nè</div>
+              <img
+                style={{ width: isPortrait ? '100%' : '100%', height: 'fit-content', paddingTop: "2px" }}
+                src={config.qrBrigde}
+                alt="Wedding QR money"
+              />
+            </div>
+          </div>
         </div>
       </Modal>
     </Section>
